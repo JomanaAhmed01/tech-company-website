@@ -2,37 +2,37 @@ import React from 'react';
 import styled from "styled-components"
 import { PersonCircle } from '@styled-icons/ionicons-solid/PersonCircle'
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function Navbar() {
-    return (
-        <Wrapper>
-            <LogoWrapper>
-                <Logo src='./img/logo.svg' />
-                <LogoTextWrapper>
-                    <WeDu>WeDu</WeDu>
-                    <Desc>Communicate. Collaborate. Create.</Desc>
-                </LogoTextWrapper>
-            </LogoWrapper>
+  return (
+    <Wrapper>
+      <LogoWrapper>
+        <Logo src='./img/logo.svg' />
+        <LogoTextWrapper>
+          <WeDu>WeDu</WeDu>
+          <Desc>Communicate. Collaborate. Create.</Desc>
+        </LogoTextWrapper>
+      </LogoWrapper>
 
-            <ItemsWrapper>
-                <FirstItem>Home</FirstItem>
-                <Item>Product</Item>
-                <Item>Pricing Plans</Item>
-                <Item>Contact</Item>
+      <ItemsWrapper>
+        <FirstItem>Home</FirstItem>
+        <Item>Product</Item>
+        <Item>Pricing Plans</Item>
+        <Item>Contact</Item>
 
-                <LogInWrapper>
-                    <Item>Log In</Item>
-                    <ProfileIcon />
-                </LogInWrapper>
+        <LogInWrapper>
+          <Item>Log In</Item>
+          <ProfileIcon />
+        </LogInWrapper>
 
-                <ButtonWrapper>
-                    <Button>Get Started</Button>
-                </ButtonWrapper>
-            </ItemsWrapper>
-        </Wrapper>
-    );
+        <ButtonWrapper>
+          <Button>Get Started</Button>
+        </ButtonWrapper>
+      </ItemsWrapper>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
