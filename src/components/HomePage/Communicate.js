@@ -41,10 +41,20 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 130px;
+  background-image: url('./img/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
 `
 
 export const TextWrapper = styled.div`
-  
+  @media screen and (max-width: 1024px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 export const Header = styled.p`
@@ -52,6 +62,11 @@ export const Header = styled.p`
   font-family: 'Space Grotesk', sans-serif;
   font-size: 50px;
   width: 478px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 29px;
+    width: 280px;
+  }
 `
 
 export const Text = styled.p`
@@ -60,6 +75,11 @@ export const Text = styled.p`
   font-size: 20px;
   width: 380px;
   line-height: 30px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    width: 280px;
+  }
 `
 
 export const Button = styled.p`
@@ -75,11 +95,19 @@ export const Button = styled.p`
   background-color: #000000;
   border-radius: 5px;
   margin-top: 50px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `
 
 export const IconsWrapper = styled.div`
   display: flex;
   margin-top: 60px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const IconTextWrapper = styled.div`
@@ -87,11 +115,19 @@ export const IconTextWrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 150px;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
 `
 
 export const Icon = styled.img`
   width: 32px;
   height: 32px;
+
+  @media screen and (max-width: 768px) {
+    padding-right: 30px;
+  }
 `
 
 export const IconText = styled.p`
@@ -99,6 +135,10 @@ export const IconText = styled.p`
   font-family: 'Space Grotesk', sans-serif;
   font-size: 14px;
   width: 90px;
+
+  @media screen and (max-width: 768px) {
+    width: 400px;
+  }
 `
 
 export const ImageWrapper = styled.div`
@@ -108,6 +148,10 @@ export const ImageWrapper = styled.div`
 export const Image = styled.img`
   width: 563px;
   height: 482px;
+
+  @media screen and (max-width: 1130px) {
+    width: 100%;
+  }
 `
 
 export default Communicate;
