@@ -23,7 +23,11 @@ function RightSoftware() {
 export const Wrapper = styled.div`
   margin-top: 150px;
   background-color: #FFBF23;
-  height: auto;
+  height: 420px;
+
+  @media screen and (max-width: 950px) {
+    height: auto;
+  }
 `
 
 export const TextWrapper = styled.div`
@@ -34,6 +38,8 @@ export const TextWrapper = styled.div`
 
   @media screen and (max-width: 950px) {
     flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 `
 
