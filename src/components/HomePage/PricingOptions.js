@@ -62,7 +62,6 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 130px;
-  padding-top: 50px;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -158,6 +157,7 @@ export const PricingWrapper = styled.div`
   border: 2px solid #000000;
   padding-bottom: 30px;
   margin-left: 30px;
+  height: auto;
 
   @media screen and (max-width: 1024px) {
     margin-top: 100px;
