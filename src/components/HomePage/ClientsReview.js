@@ -69,10 +69,10 @@ export const Header = styled.p`
   color: #000000;
   font-size: 38px;
   font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 50px;
 
   @media screen and (max-width: 1024px) {
     text-align: center;
-    margin-bottom: 50px;
   }
 
   @media screen and (max-width: 470px) {
