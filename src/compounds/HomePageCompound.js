@@ -4,6 +4,7 @@ import Navbar from '../components/HomePage/Navbar'
 import Communicate from '../components/HomePage/Communicate'
 import RightSoftware from '../components/HomePage/RightSoftware'
 import WhatWeOffer from '../components/HomePage/WhatWeOffer'
+import BuiltForCreatives from '../components/HomePage/BuiltForCreatives'
 
 function HomePageCompound() {
   return (
@@ -12,6 +13,7 @@ function HomePageCompound() {
       <Communicate />
       <RightSoftware />
       <WhatWeOffer />
+      <BuiltForCreatives />
     </Wrapper>
   );
 }
