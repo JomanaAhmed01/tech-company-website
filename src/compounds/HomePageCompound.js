@@ -8,6 +8,7 @@ import BuiltForCreatives from '../components/HomePage/BuiltForCreatives'
 import IndustryLeaders from '../components/HomePage/IndustryLeaders'
 import ClientsReview from '../components/HomePage/ClientsReview'
 import PricingOptions from '../components/HomePage/PricingOptions'
+import MaximizeYourProductivity from '../components/HomePage/MaximizeYourProductivity'
 
 function HomePageCompound() {
   return (
@@ -20,6 +21,7 @@ function HomePageCompound() {
       <IndustryLeaders />
       <ClientsReview />
       <PricingOptions />
+      <MaximizeYourProductivity />
     </Wrapper>
   );
 }
