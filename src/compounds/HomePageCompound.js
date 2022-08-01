@@ -7,6 +7,7 @@ import WhatWeOffer from '../components/HomePage/WhatWeOffer'
 import BuiltForCreatives from '../components/HomePage/BuiltForCreatives'
 import IndustryLeaders from '../components/HomePage/IndustryLeaders'
 import ClientsReview from '../components/HomePage/ClientsReview'
+import PricingOptions from '../components/HomePage/PricingOptions'
 
 function HomePageCompound() {
   return (
@@ -18,6 +19,7 @@ function HomePageCompound() {
       <BuiltForCreatives />
       <IndustryLeaders />
       <ClientsReview />
+      <PricingOptions />
     </Wrapper>
   );
 }
