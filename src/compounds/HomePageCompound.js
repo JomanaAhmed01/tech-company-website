@@ -6,6 +6,7 @@ import RightSoftware from '../components/HomePage/RightSoftware'
 import WhatWeOffer from '../components/HomePage/WhatWeOffer'
 import BuiltForCreatives from '../components/HomePage/BuiltForCreatives'
 import IndustryLeaders from '../components/HomePage/IndustryLeaders'
+import ClientsReview from '../components/HomePage/ClientsReview'
 
 function HomePageCompound() {
   return (
@@ -16,6 +17,7 @@ function HomePageCompound() {
       <WhatWeOffer />
       <BuiltForCreatives />
       <IndustryLeaders />
+      <ClientsReview />
     </Wrapper>
   );
 }
