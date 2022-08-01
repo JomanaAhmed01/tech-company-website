@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Navbar from '../components/HomePage/Navbar'
 import Communicate from '../components/HomePage/Communicate'
 import RightSoftware from '../components/HomePage/RightSoftware'
+import WhatWeOffer from '../components/HomePage/WhatWeOffer'
 
 function HomePageCompound() {
   return (
@@ -10,6 +11,7 @@ function HomePageCompound() {
       <Navbar />
       <Communicate />
       <RightSoftware />
+      <WhatWeOffer />
     </Wrapper>
   );
 }
