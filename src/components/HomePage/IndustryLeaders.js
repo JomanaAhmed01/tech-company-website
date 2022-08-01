@@ -1,38 +1,38 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function IndustryLeaders() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <Header>Trusted Among Industry Leaders</Header>
-                <Text>I'm a paragraph.
-                    Click here to add your own text and edit me.
-                    It’s easy.
-                    Just click “Edit Text” or double click me to add your own content and make changes to the font.
-                </Text>
-            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>Trusted Among Industry Leaders</Header>
+        <Text>I'm a paragraph.
+          Click here to add your own text and edit me.
+          It’s easy.
+          Just click “Edit Text” or double click me to add your own content and make changes to the font.
+        </Text>
+      </TextWrapper>
 
-            <LogosWrapper>
-                <FirstLogoRow>
-                    <FirstLogo src='./img/meta-definer.png' />
-                    <Logo src='./img/delta-tech.png' />
-                    <Logo src='./img/tech-med.png' />
-                    <Logo src='./img/power-core.png' />
-                </FirstLogoRow>
+      <LogosWrapper>
+        <FirstLogoRow>
+          <FirstLogo src='./img/meta-definer.png' />
+          <Logo src='./img/delta-tech.png' />
+          <Logo src='./img/tech-med.png' />
+          <Logo src='./img/power-core.png' />
+        </FirstLogoRow>
 
-                <SecondLogoRow>
-                    <Logo src='./img/strongest-link.png' />
-                    <Logo src='./img/cog-industry.png' />
-                    <Logo src='./img/a-t-motion.png' />
-                    <Logo src='./img/bond.png' />
-                </SecondLogoRow>
-            </LogosWrapper>
-        </Wrapper>
-    );
+        <SecondLogoRow>
+          <Logo src='./img/strongest-link.png' />
+          <Logo src='./img/cog-industry.png' />
+          <Logo src='./img/a-t-motion.png' />
+          <Logo src='./img/bond.png' />
+        </SecondLogoRow>
+      </LogosWrapper>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
