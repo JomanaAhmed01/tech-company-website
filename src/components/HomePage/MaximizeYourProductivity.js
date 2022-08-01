@@ -70,6 +70,7 @@ export const Button = styled.p`
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: -100px;
 `
 
 export const Image = styled.img`
