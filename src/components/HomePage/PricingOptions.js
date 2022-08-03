@@ -248,15 +248,12 @@ export const IamABenefitWrapper = styled.div`
   width: 420px;
   height: 209px;
   margin-left: -2px;
+  margin-right: -2px;
   padding-left: 30px;
   padding-top: 20px;
 
   @media screen and (max-width: 560px) {
-    width: 94%;
-  }
-
-  @media screen and (max-width: 460px) {
-    width: 93%;
+    width: auto;
   }
 `
 
