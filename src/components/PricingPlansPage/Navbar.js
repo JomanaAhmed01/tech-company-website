@@ -112,8 +112,8 @@ export const LogInWrapper = styled.div`
 `
 
 export const ProfileIcon = styled(PersonCircle)`
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 `
 
