@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function MaximizeYourProductivity() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-              <Header>Get Ready to Maximize Your Productivity With Our Workflow Solutions</Header>
-              <Button>Get Started</Button>
-            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>Get Ready to Maximize Your Productivity With Our Workflow Solutions</Header>
+        <Button>Get Started</Button>
+      </TextWrapper>
 
-            <ImageWrapper>
-                <Image src='./img/productivity.svg' />
-            </ImageWrapper>
-        </Wrapper>
-    );
+      <ImageWrapper>
+        <Image src='./img/productivity.svg' />
+      </ImageWrapper>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
