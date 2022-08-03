@@ -119,7 +119,7 @@ export const ProfileIcon = styled(PersonCircle)`
 export const ButtonWrapper = styled.div`
   width: 112px;
   height: 40px;
-  margin-top: -20px;
+  margin-top: -30px;
 `
 
 export const Button = styled.p`

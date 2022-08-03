@@ -41,6 +41,7 @@ function Navbar() {
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -120,7 +121,7 @@ export const ProfileIcon = styled(PersonCircle)`
 export const ButtonWrapper = styled.div`
   width: 112px;
   height: 40px;
-  margin-top: -20px;
+  margin-top: -30px;
 `
 
 export const Button = styled.p`
