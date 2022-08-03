@@ -2,99 +2,99 @@ import React from 'react';
 import styled from "styled-components"
 import { CheckCircleFill } from '@styled-icons/bootstrap/CheckCircleFill'
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function PricingPlans() {
-    return (
-        <Wrapper>
-            <PricingWrapperOne>
-                <PricingTextWrapper>
-                    <PremiumFirst>Free</PremiumFirst>
-                    <DollarsFirst>$0</DollarsFirst>
-                    <MembershipFirst>Use this area to describe one of your memberships.</MembershipFirst>
-                    <ValidForFirst>Valid for 3 months</ValidForFirst>
-                    <GetStartedButtonFirst>Get Started</GetStartedButtonFirst>
-                </PricingTextWrapper>
+  return (
+    <Wrapper>
+      <PricingWrapperOne>
+        <PricingTextWrapper>
+          <PremiumFirst>Free</PremiumFirst>
+          <DollarsFirst>$0</DollarsFirst>
+          <MembershipFirst>Use this area to describe one of your memberships.</MembershipFirst>
+          <ValidForFirst>Valid for 3 months</ValidForFirst>
+          <GetStartedButtonFirst>Get Started</GetStartedButtonFirst>
+        </PricingTextWrapper>
 
-                <IamABenefitWrapperFirst>
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
+        <IamABenefitWrapperFirst>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
 
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
-                </IamABenefitWrapperFirst>
-            </PricingWrapperOne>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
+        </IamABenefitWrapperFirst>
+      </PricingWrapperOne>
 
-            <PricingWrapperTwo>
-                <PricingTextWrapper>
-                    <PremiumFirst>Standard</PremiumFirst>
-                    <DollarsFirst>$30</DollarsFirst>
-                    <TimingFirst>Every month</TimingFirst>
-                    <MembershipFirst>Use this area to describe one of your memberships.</MembershipFirst>
-                    <ValidForFirst>Valid for 6 months</ValidForFirst>
-                    <GetStartedButtonFirst>Get Started</GetStartedButtonFirst>
-                </PricingTextWrapper>
+      <PricingWrapperTwo>
+        <PricingTextWrapper>
+          <PremiumFirst>Standard</PremiumFirst>
+          <DollarsFirst>$30</DollarsFirst>
+          <TimingFirst>Every month</TimingFirst>
+          <MembershipFirst>Use this area to describe one of your memberships.</MembershipFirst>
+          <ValidForFirst>Valid for 6 months</ValidForFirst>
+          <GetStartedButtonFirst>Get Started</GetStartedButtonFirst>
+        </PricingTextWrapper>
 
-                <IamABenefitWrapperSecond>
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
+        <IamABenefitWrapperSecond>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
 
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
 
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
-                </IamABenefitWrapperSecond>
-            </PricingWrapperTwo>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
+        </IamABenefitWrapperSecond>
+      </PricingWrapperTwo>
 
-            <PricingWrapperThree>
-                <BestValue>Best Value</BestValue>
+      <PricingWrapperThree>
+        <BestValue>Best Value</BestValue>
 
-                <PricingTextWrapper>
-                    <Premium>Premium</Premium>
-                    <Dollars>$50</Dollars>
-                    <Timing>Every month</Timing>
-                    <Membership>Use this area to describe one of your memberships.</Membership>
-                    <ValidFor>Valid for 12 months</ValidFor>
-                    <GetStartedButton>Get Started</GetStartedButton>
-                </PricingTextWrapper>
+        <PricingTextWrapper>
+          <Premium>Premium</Premium>
+          <Dollars>$50</Dollars>
+          <Timing>Every month</Timing>
+          <Membership>Use this area to describe one of your memberships.</Membership>
+          <ValidFor>Valid for 12 months</ValidFor>
+          <GetStartedButton>Get Started</GetStartedButton>
+        </PricingTextWrapper>
 
 
-                <IamABenefitWrapper>
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
+        <IamABenefitWrapper>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
 
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
 
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
 
-                    <IconTextWrapper>
-                        <Icon />
-                        <IconText>I'm a benefit</IconText>
-                    </IconTextWrapper>
-                </IamABenefitWrapper>
-            </PricingWrapperThree>
-        </Wrapper>
-    );
+          <IconTextWrapper>
+            <Icon />
+            <IconText>I'm a benefit</IconText>
+          </IconTextWrapper>
+        </IamABenefitWrapper>
+      </PricingWrapperThree>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
@@ -106,6 +106,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
   }
 
   @media screen and (max-width: 560px) {
