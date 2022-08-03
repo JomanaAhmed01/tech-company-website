@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 import Navbar from '../components/PricingPlansPage/Navbar'
 import Header from '../components/PricingPlansPage/Header'
+import PricingPlans from '../components/PricingPlansPage/PricingPlans'
 
 function PricingPlansPageCompound() {
     return (
@@ -10,6 +11,8 @@ function PricingPlansPageCompound() {
                 <Navbar />
                 <Header />
             </HeaderSectionWrapper>
+
+            <PricingPlans />
         </Wrapper>
     );
 }
