@@ -124,7 +124,10 @@ export const IconText = styled.p`
 `
 
 export const ImageWrapper = styled.div`
-  
+  @media screen and (max-width: 1130px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `
 
 export const Image = styled.img`
