@@ -20,7 +20,7 @@ function MaximizeYourProductivity() {
 }
 
 export const Wrapper = styled.div`
-  margin-top: 170px;
+  margin-top: 370px;
 `
 
 export const TextWrapper = styled.div`
