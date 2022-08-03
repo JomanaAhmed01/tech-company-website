@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Navbar from '../components/PricingPlansPage/Navbar'
 import Header from '../components/PricingPlansPage/Header'
 import PricingPlans from '../components/PricingPlansPage/PricingPlans'
+import Footer from '../components/PricingPlansPage/Footer'
 
 function PricingPlansPageCompound() {
     return (
@@ -13,6 +14,7 @@ function PricingPlansPageCompound() {
             </HeaderSectionWrapper>
 
             <PricingPlans />
+            <Footer />
         </Wrapper>
     );
 }
