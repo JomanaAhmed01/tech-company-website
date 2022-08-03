@@ -44,7 +44,7 @@ export const Wrapper = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 
   @media screen and (max-width: 1024px) {
     align-items: center;
