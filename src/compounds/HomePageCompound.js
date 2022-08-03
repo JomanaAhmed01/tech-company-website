@@ -9,6 +9,7 @@ import IndustryLeaders from '../components/HomePage/IndustryLeaders'
 import ClientsReview from '../components/HomePage/ClientsReview'
 import PricingOptions from '../components/HomePage/PricingOptions'
 import MaximizeYourProductivity from '../components/HomePage/MaximizeYourProductivity'
+import Footer from '../components/HomePage/Footer'
 
 function HomePageCompound() {
   return (
@@ -22,6 +23,7 @@ function HomePageCompound() {
       <ClientsReview />
       <PricingOptions />
       <MaximizeYourProductivity />
+      <Footer />
     </Wrapper>
   );
 }
