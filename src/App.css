@@ -1,5 +1,6 @@
 .App {
-  
+  border: 3px solid rgb(50, 136, 185);
+  overflow-x: hidden;
 }
 
 .App-logo {
