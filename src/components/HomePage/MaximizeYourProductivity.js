@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function MaximizeYourProductivity() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <TextWrapper>
         <Header>Get Ready to Maximize Your Productivity With Our Workflow Solutions</Header>
-        <Button>Get Started</Button>
+        <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
       </TextWrapper>
 
       <ImageWrapper>
@@ -24,7 +28,10 @@ export const Wrapper = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `
 
 export const Header = styled.p`
@@ -55,9 +62,7 @@ export const Button = styled.p`
   width: 112px;
   background-color: #000000;
   border-radius: 5px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 100px;
   transition: 0.3s ease-in-out;
   border: 2px solid #000000;
 
