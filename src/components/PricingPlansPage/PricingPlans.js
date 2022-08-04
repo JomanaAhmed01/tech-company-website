@@ -152,7 +152,6 @@ export const PricingWrapperThree = styled.div`
   height: 400px;
   background-color: #000000;
   border-radius: 10px;
-  border: 2px solid #000000;
   margin-left: 30px;
 
   @media screen and (max-width: 1100px) {
@@ -324,12 +323,10 @@ export const GetStartedButton = styled.p`
 
 export const IamABenefitWrapper = styled.div`
   background-color: #FFD7EF;
-  border: 2px solid #000000;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 296px;
-  height: 244px;
-  margin-left: -2px;
+  height: 253px;
   padding-left: 30px;
   padding-top: 20px;
 
