@@ -28,7 +28,7 @@ function Navbar() {
         <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
 
         <LogInWrapper>
-          <ProfileIcon />
+          <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
           <Item onClick={() => history.push('/DemoModePageCompound')}>Log In</Item>
         </LogInWrapper>
 
