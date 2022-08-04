@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 import { PersonCircle } from '@styled-icons/ionicons-solid/PersonCircle'
 import { MenuOutline } from '@styled-icons/evaicons-outline/MenuOutline'
 <style>
@@ -7,29 +8,32 @@ import { MenuOutline } from '@styled-icons/evaicons-outline/MenuOutline'
 </style>
 
 function Navbar() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <LogoWrapper>
         <Logo src='./img/logo.svg' />
         <LogoTextWrapper>
-          <WeDu>WeDu</WeDu>
+          <WeDu onClick={() => history.push('/')}>WeDu</WeDu>
           <Desc>Communicate. Collaborate. Create.</Desc>
         </LogoTextWrapper>
       </LogoWrapper>
 
       <ItemsWrapper>
-        <FirstItem>Home</FirstItem>
-        <Item>Product</Item>
-        <Item>Pricing Plans</Item>
-        <Item>Contact</Item>
+        <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
+        <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
+        <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
+        <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
 
         <LogInWrapper>
           <ProfileIcon />
-          <Item>Log In</Item>
+          <Item onClick={() => history.push('/DemoModePageCompound')}>Log In</Item>
         </LogInWrapper>
 
         <ButtonWrapper>
-          <Button>Get Started</Button>
+          <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
         </ButtonWrapper>
       </ItemsWrapper>
 
@@ -41,10 +45,11 @@ function Navbar() {
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 100px;
+  border-top: 8px solid #000000;
 
   @media screen and (max-width: 1024px) {
     align-items: center;
@@ -71,6 +76,7 @@ export const WeDu = styled.p`
   font-family: 'Space Grotesk', sans-serif;
   font-size: 22px;
   margin-bottom: -13px;
+  cursor: pointer;
 `
 
 export const Desc = styled.p`
@@ -134,6 +140,13 @@ export const Button = styled.p`
   text-align: center;
   border-radius: 5px;
   border: 2px solid #000000;
+  transition: 0.3s ease-in-out;
+
+  :hover {
+    background-color: #000000;
+    color: #FFBF23;
+    cursor: pointer;
+  }
 `
 
 export const MenuIcon = styled(MenuOutline)`
