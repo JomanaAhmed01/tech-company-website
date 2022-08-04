@@ -234,6 +234,12 @@ export const GetStartedButtonFirst = styled.p`
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.3s ease-in-out;
+
+  :hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 `
 
 export const IamABenefitWrapperFirst = styled.div`
@@ -319,6 +325,12 @@ export const GetStartedButton = styled.p`
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.3s ease-in-out;
+
+  :hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 `
 
 export const IamABenefitWrapper = styled.div`
