@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 import { Delete } from '@styled-icons/typicons/Delete'
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function DemoMode() {
+
+  const history = useHistory()
+
     return (
         <Wrapper>
             <XIconWrapper>
-              <ExitIcon />
+              <ExitIcon onClick={() => history.push('/')}/>
             </XIconWrapper>
           <TextWrapper>
             <Header>Demo Mode</Header>
             <Text>To make this template yours, start editing it.</Text>
-            <Button>OK</Button>
+            <Button onClick={() => history.push('/')}>OK</Button>
           </TextWrapper>
         </Wrapper>
     );
