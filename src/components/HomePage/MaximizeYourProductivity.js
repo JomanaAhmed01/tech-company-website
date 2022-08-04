@@ -50,6 +50,7 @@ export const Button = styled.p`
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 5px;
+  padding-left: 5px;
   text-align: center;
   width: 112px;
   background-color: #000000;
@@ -57,11 +58,11 @@ export const Button = styled.p`
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #000000;
   transition: 0.3s ease-in-out;
+  border: 2px solid #000000;
 
   :hover {
-    background-color: #996E00;
+    background-color: #FFBF23;
     color: #000000;
     cursor: pointer;
   }
