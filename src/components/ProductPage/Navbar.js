@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 import { PersonCircle } from '@styled-icons/ionicons-solid/PersonCircle'
 import { MenuOutline } from '@styled-icons/evaicons-outline/MenuOutline'
 <style>
@@ -7,6 +8,9 @@ import { MenuOutline } from '@styled-icons/evaicons-outline/MenuOutline'
 </style>
 
 function Navbar() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <LogoWrapper>
@@ -18,18 +22,18 @@ function Navbar() {
       </LogoWrapper>
 
       <ItemsWrapper>
-        <FirstItem>Home</FirstItem>
-        <Item>Product</Item>
-        <Item>Pricing Plans</Item>
-        <Item>Contact</Item>
+        <FirstItem onClick={() => history.push('/HomePageCompound')}>Home</FirstItem>
+        <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
+        <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
+        <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
 
         <LogInWrapper>
           <ProfileIcon />
-          <Item>Log In</Item>
+          <Item onClick={() => history.push('/DemoModePageCompound')}>Log In</Item>
         </LogInWrapper>
 
         <ButtonWrapper>
-          <Button>Get Started</Button>
+          <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
         </ButtonWrapper>
       </ItemsWrapper>
 
@@ -41,9 +45,11 @@ function Navbar() {
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border-top: 8px solid #000000;
 
   @media screen and (max-width: 1024px) {
     align-items: center;
