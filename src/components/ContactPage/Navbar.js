@@ -22,7 +22,7 @@ function Navbar() {
       </LogoWrapper>
 
       <ItemsWrapper>
-        <FirstItem onClick={() => history.push('/HomePageCompound')}>Home</FirstItem>
+        <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
         <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
         <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
         <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
