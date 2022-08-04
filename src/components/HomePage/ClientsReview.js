@@ -1,55 +1,55 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function ClientsReview() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <Header>What Our Clients Say</Header>
-            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>What Our Clients Say</Header>
+      </TextWrapper>
 
-            <CardsWrapper>
-                <CardWrapper>
-                    <Text>“I'm a testimonial.
-                        Click to edit me and add text that says something nice about you and your services.
-                        Let your customers review you and tell their friends how great you are.”
-                    </Text>
+      <CardsWrapper>
+        <CardWrapper>
+          <Text>“I'm a testimonial.
+            Click to edit me and add text that says something nice about you and your services.
+            Let your customers review you and tell their friends how great you are.”
+          </Text>
 
-                    <ClientWrapper>
-                        <Plant src='./img/plant-1.svg' />
-                        <Client>Deena Levies, Mission Bay</Client>
-                    </ClientWrapper>
-                </CardWrapper>
+          <ClientWrapper>
+            <Plant src='./img/plant-1.svg' />
+            <Client>Deena Levies, Mission Bay</Client>
+          </ClientWrapper>
+        </CardWrapper>
 
-                <CardWrapper>
-                    <Text>“I'm a testimonial.
-                        Click to edit me and add text that says something nice about you and your services.
-                        Let your customers review you and tell their friends how great you are.”
-                    </Text>
+        <CardWrapper>
+          <Text>“I'm a testimonial.
+            Click to edit me and add text that says something nice about you and your services.
+            Let your customers review you and tell their friends how great you are.”
+          </Text>
 
-                    <ClientWrapper>
-                        <Plant src='./img/plant-2.svg' />
-                        <Client>Tom Smithenson, Parkmerced</Client>
-                    </ClientWrapper>
-                </CardWrapper>
+          <ClientWrapper>
+            <Plant src='./img/plant-2.svg' />
+            <Client>Tom Smithenson, Parkmerced</Client>
+          </ClientWrapper>
+        </CardWrapper>
 
-                <CardWrapper>
-                    <Text>“I'm a testimonial.
-                        Click to edit me and add text that says something nice about you and your services.
-                        Let your customers review you and tell their friends how great you are.”
-                    </Text>
+        <CardWrapper>
+          <Text>“I'm a testimonial.
+            Click to edit me and add text that says something nice about you and your services.
+            Let your customers review you and tell their friends how great you are.”
+          </Text>
 
-                    <ClientWrapper>
-                        <Plant src='./img/plant-3.svg' />
-                        <Client>Tilly Green, Hayes Valley</Client>
-                    </ClientWrapper>
-                </CardWrapper>
-            </CardsWrapper>
-        </Wrapper>
-    );
+          <ClientWrapper>
+            <Plant src='./img/plant-3.svg' />
+            <Client>Tilly Green, Hayes Valley</Client>
+          </ClientWrapper>
+        </CardWrapper>
+      </CardsWrapper>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
