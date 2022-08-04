@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function Footer() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <LogoWrapper>
         <Logo src='./img/logo.svg' />
         <LogoTextWrapper>
-          <WeDu>WeDu</WeDu>
+          <WeDu onClick={() => history.push('/')}>WeDu</WeDu>
           <Desc>Communicate. Collaborate. Create.</Desc>
         </LogoTextWrapper>
       </LogoWrapper>
@@ -107,6 +111,7 @@ export const WeDu = styled.p`
   font-family: 'Space Grotesk', sans-serif;
   font-size: 22px;
   margin-bottom: -13px;
+  cursor: pointer;
 
   @media screen and (max-width: 440px) {
     font-size: 17px;
