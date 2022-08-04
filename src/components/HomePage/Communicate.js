@@ -47,6 +47,7 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 1024px) {
     flex-direction: column-reverse;
+    width: 100%;
   }
 `
 
@@ -90,6 +91,7 @@ export const Button = styled.p`
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 5px;
+  padding-left: 5px;
   text-align: center;
   width: 112px;
   background-color: #000000;

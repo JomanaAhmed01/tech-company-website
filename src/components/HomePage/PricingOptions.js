@@ -157,7 +157,6 @@ export const PricingWrapper = styled.div`
   border: 2px solid #000000;
   padding-bottom: 30px;
   margin-left: 30px;
-  height: auto;
 
   @media screen and (max-width: 1024px) {
     margin-top: 100px;
@@ -249,15 +248,12 @@ export const IamABenefitWrapper = styled.div`
   width: 420px;
   height: 209px;
   margin-left: -2px;
+  margin-right: -2px;
   padding-left: 30px;
   padding-top: 20px;
 
   @media screen and (max-width: 560px) {
-    width: 94%;
-  }
-
-  @media screen and (max-width: 460px) {
-    width: 93%;
+    width: auto;
   }
 `
 

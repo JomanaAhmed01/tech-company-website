@@ -111,15 +111,15 @@ export const LogInWrapper = styled.div`
 `
 
 export const ProfileIcon = styled(PersonCircle)`
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 `
 
 export const ButtonWrapper = styled.div`
   width: 112px;
   height: 40px;
-  margin-top: -20px;
+  margin-top: -30px;
 `
 
 export const Button = styled.p`

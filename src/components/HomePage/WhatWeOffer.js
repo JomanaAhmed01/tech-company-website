@@ -72,8 +72,8 @@ export const Wrapper = styled.div`
 export const TextWrapper = styled.div`
   margin-left: 100px;
 
-  @media screen and (max-width: 500px) {
-    margin-left: 80px;
+  @media screen and (max-width: 1050px) {
+    margin-left: 0px;
   }
 `
 
@@ -81,6 +81,10 @@ export const Header = styled.p`
   color: #000000;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 38px;
+
+  @media screen and (max-width: 1050px) {
+    text-align: center;
+  }
 
   @media screen and (max-width: 500px) {
     font-size: 24px;
@@ -93,6 +97,12 @@ export const Text = styled.p`
   font-size: 16px;
   width: 492px;
   line-height: 25px;
+
+  @media screen and (max-width: 1050px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (max-width: 768px) {
     width: 75%;

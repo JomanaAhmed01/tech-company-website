@@ -34,7 +34,7 @@ export const TextWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 130px;
+  padding-top: 100px;
 
   @media screen and (max-width: 950px) {
     flex-direction: column;
