@@ -22,13 +22,13 @@ function Navbar() {
       </LogoWrapper>
 
       <ItemsWrapper>
-        <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
-        <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
+        <Item onClick={() => history.push('/')}>Home</Item>
+        <SecondItem onClick={() => history.push('/ProductPageCompound')}>Product</SecondItem>
         <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
         <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
 
         <LogInWrapper>
-          <ProfileIcon />
+          <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
           <Item onClick={() => history.push('/DemoModePageCompound')}>Log In</Item>
         </LogInWrapper>
 
@@ -95,7 +95,7 @@ export const ItemsWrapper = styled.div`
   }
 `
 
-export const FirstItem = styled.p`
+export const SecondItem = styled.p`
   color: #6E6E6E;
   font-size: 16px;
   cursor: default;

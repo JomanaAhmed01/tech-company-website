@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function Communicate() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <TextWrapper>
         <Header>Communicate. Collaborate. Create.</Header>
         <Text>WeDu provides an effective and powerful way to manage your projects</Text>
-        <Button>Get Started</Button>
+        <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
 
         <IconsWrapper>
           <IconTextWrapper>
@@ -97,6 +101,14 @@ export const Button = styled.p`
   background-color: #000000;
   border-radius: 5px;
   margin-top: 50px;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #000000;
+
+  :hover {
+    background-color: #FFBF23;
+    color: #000000;
+    cursor: pointer;
+  }
 
   @media screen and (max-width: 1024px) {
     width: 100%;

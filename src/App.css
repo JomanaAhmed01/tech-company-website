@@ -1,5 +1,10 @@
 .App {
   overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .App-logo {

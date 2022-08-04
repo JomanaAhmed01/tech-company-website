@@ -4,11 +4,11 @@ import DemoMode from '../components/DemoModePage/DemoMode'
 
 
 function DemoModePageCompound() {
-    return (
-        <Wrapper>
-          <DemoMode />
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <DemoMode />
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
