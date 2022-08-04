@@ -16,7 +16,7 @@ function Navbar() {
       <LogoWrapper>
         <Logo src='./img/logo.svg' />
         <LogoTextWrapper>
-          <WeDu>WeDu</WeDu>
+          <WeDu onClick={() => history.push('/')}>WeDu</WeDu>
           <Desc>Communicate. Collaborate. Create.</Desc>
         </LogoTextWrapper>
       </LogoWrapper>
@@ -76,6 +76,7 @@ export const WeDu = styled.p`
   font-family: 'Space Grotesk', sans-serif;
   font-size: 22px;
   margin-bottom: -13px;
+  cursor: pointer;
 `
 
 export const Desc = styled.p`
