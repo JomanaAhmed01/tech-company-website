@@ -139,6 +139,13 @@ export const Button = styled.p`
   text-align: center;
   border-radius: 5px;
   border: 2px solid #000000;
+  transition: 0.3s ease-in-out;
+
+  :hover {
+    background-color: #000000;
+    color: #FFBF23;
+    cursor: pointer;
+  }
 `
 
 export const MenuIcon = styled(MenuOutline)`
