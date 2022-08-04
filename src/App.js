@@ -1,15 +1,16 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import HomePageCompound from './compounds/HomePageCompound'
-import ProductPageCompound from './compounds/ProductPageCompound'
-import PricingPlansPageCompound from './compounds/PricingPlansPageCompound'
-import ContactPageCompound from './compounds/ContactPageCompound'
-import DemoModePageCompound from './compounds/DemoModePageCompound'
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import HomePageCompound from './compounds/HomePageCompound'
+// import ProductPageCompound from './compounds/ProductPageCompound'
+// import PricingPlansPageCompound from './compounds/PricingPlansPageCompound'
+// import ContactPageCompound from './compounds/ContactPageCompound'
+// import DemoModePageCompound from './compounds/DemoModePageCompound'
+import CheckoutPageCompound from './compounds/CheckoutPageCompound'
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Switch>
           <Route exact path="/">
             <HomePageCompound />
@@ -31,7 +32,8 @@ function App() {
             <DemoModePageCompound />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
+      <CheckoutPageCompound />
     </div>
   );
 }
