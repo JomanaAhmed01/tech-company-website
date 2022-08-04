@@ -22,10 +22,10 @@ function Navbar() {
       </LogoWrapper>
 
       <ItemsWrapper>
-        <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
+        <Item onClick={() => history.push('/')}>Home</Item>
         <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
         <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
-        <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
+        <FourthItem onClick={() => history.push('/ContactPageCompound')}>Contact</FourthItem>
 
         <LogInWrapper>
           <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
@@ -95,7 +95,7 @@ export const ItemsWrapper = styled.div`
   }
 `
 
-export const FirstItem = styled.p`
+export const FourthItem = styled.p`
   color: #6E6E6E;
   font-size: 16px;
   cursor: default;
