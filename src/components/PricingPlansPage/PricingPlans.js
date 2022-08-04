@@ -100,13 +100,13 @@ function PricingPlans() {
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 130px;
+  margin-top: 100px;
+  margin-bottom: 550px;
 
   @media screen and (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
   }
 
   @media screen and (max-width: 560px) {
@@ -116,9 +116,13 @@ export const Wrapper = styled.div`
 
 export const PricingWrapperOne = styled.div`
   width: 326px;
-  height: auto;
+  height: 400px;
   background-color: rgb(255, 191, 35);
   border-radius: 10px;
+
+  @media screen and (max-width: 1100px) {
+    margin-bottom: 200px;
+  }
 
   @media screen and (max-width: 560px) {
     width: 90%;
@@ -127,7 +131,7 @@ export const PricingWrapperOne = styled.div`
 
 export const PricingWrapperTwo = styled.div`
   width: 326px;
-  height: auto;
+  height: 400px;
   background-color: rgb(255, 191, 35);
   border-radius: 10px;
   margin-left: 30px;
@@ -135,6 +139,7 @@ export const PricingWrapperTwo = styled.div`
   @media screen and (max-width: 1100px) {
     margin-top: 100px;
     margin-left: 0px;
+    margin-bottom: 200px;
   }
 
   @media screen and (max-width: 560px) {
@@ -144,7 +149,7 @@ export const PricingWrapperTwo = styled.div`
 
 export const PricingWrapperThree = styled.div`
   width: 326px;
-  height: auto;
+  height: 400px;
   background-color: #000000;
   border-radius: 10px;
   border: 2px solid #000000;
@@ -237,7 +242,7 @@ export const IamABenefitWrapperFirst = styled.div`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: auto;
-  height: 209px;
+  height: 230px;
   margin-left: -2px;
   padding-left: 30px;
   padding-top: 20px;
@@ -253,7 +258,7 @@ export const IamABenefitWrapperSecond = styled.div`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: auto;
-  height: 209px;
+  height: 230px;
   margin-left: -2px;
   padding-left: 30px;
   padding-top: 20px;
@@ -323,7 +328,7 @@ export const IamABenefitWrapper = styled.div`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 296px;
-  height: 209px;
+  height: 244px;
   margin-left: -2px;
   padding-left: 30px;
   padding-top: 20px;
