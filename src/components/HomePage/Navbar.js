@@ -11,7 +11,6 @@ function Navbar() {
 
   const history = useHistory()
 
-
   return (
     <Wrapper>
       <LogoWrapper>
