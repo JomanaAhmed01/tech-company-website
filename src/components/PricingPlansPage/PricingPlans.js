@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 import { CheckCircleFill } from '@styled-icons/bootstrap/CheckCircleFill'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function PricingPlans() {
+
+  const history = useHistory()
+  
   return (
     <Wrapper>
       <PricingWrapperOne>
@@ -14,7 +18,7 @@ function PricingPlans() {
           <DollarsFirst>$0</DollarsFirst>
           <MembershipFirst>Use this area to describe one of your memberships.</MembershipFirst>
           <ValidForFirst>Valid for 3 months</ValidForFirst>
-          <GetStartedButtonFirst>Get Started</GetStartedButtonFirst>
+          <GetStartedButtonFirst onClick={() => history.push('/CheckoutFreePageCompound')}>Get Started</GetStartedButtonFirst>
         </PricingTextWrapper>
 
         <IamABenefitWrapperFirst>
@@ -37,7 +41,7 @@ function PricingPlans() {
           <TimingFirst>Every month</TimingFirst>
           <MembershipFirst>Use this area to describe one of your memberships.</MembershipFirst>
           <ValidForFirst>Valid for 6 months</ValidForFirst>
-          <GetStartedButtonFirst>Get Started</GetStartedButtonFirst>
+          <GetStartedButtonFirst onClick={() => history.push('/CheckoutStandardPageCompound')}>Get Started</GetStartedButtonFirst>
         </PricingTextWrapper>
 
         <IamABenefitWrapperSecond>
@@ -67,7 +71,7 @@ function PricingPlans() {
           <Timing>Every month</Timing>
           <Membership>Use this area to describe one of your memberships.</Membership>
           <ValidFor>Valid for 12 months</ValidFor>
-          <GetStartedButton>Get Started</GetStartedButton>
+          <GetStartedButton onClick={() => history.push('/CheckoutPremiumPageCompound')}>Get Started</GetStartedButton>
         </PricingTextWrapper>
 
 
