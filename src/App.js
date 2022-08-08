@@ -5,6 +5,9 @@ import ProductPageCompound from './compounds/ProductPageCompound'
 import PricingPlansPageCompound from './compounds/PricingPlansPageCompound'
 import ContactPageCompound from './compounds/ContactPageCompound'
 import DemoModePageCompound from './compounds/DemoModePageCompound'
+import CheckoutFreePageCompound from './compounds/CheckoutFreePageCompound'
+import CheckoutStandardPageCompound from './compounds/CheckoutStandardPageCompound'
+import CheckoutPremiumPageCompound from './compounds/CheckoutPremiumPageCompound'
 
 function App() {
   return (
@@ -29,6 +32,18 @@ function App() {
 
           <Route path="/DemoModePageCompound">
             <DemoModePageCompound />
+          </Route>
+
+          <Route path="/CheckoutFreePageCompound">
+            <CheckoutFreePageCompound />
+          </Route>
+
+          <Route path="/CheckoutStandardPageCompound">
+            <CheckoutStandardPageCompound />
+          </Route>
+
+          <Route path="/CheckoutPremiumPageCompound">
+            <CheckoutPremiumPageCompound />
           </Route>
         </Switch>
       </Router>
