@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components"
 import Navbar from '../components/CheckoutPage/Navbar'
+// import CheckoutFree from '../components/CheckoutPage/CheckoutFree'
+import CheckoutStandard from '../components/CheckoutPage/CheckoutStandard'
 
 function CheckoutPageCompound() {
   return (
@@ -8,6 +10,9 @@ function CheckoutPageCompound() {
       <HeaderSectionWrapper>
         <Navbar />
       </HeaderSectionWrapper>
+
+      {/* <CheckoutFree /> */}
+      <CheckoutStandard />
     </Wrapper>
   );
 }
