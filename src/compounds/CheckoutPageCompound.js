@@ -2,7 +2,8 @@ import React from 'react';
 import styled from "styled-components"
 import Navbar from '../components/CheckoutPage/Navbar'
 // import CheckoutFree from '../components/CheckoutPage/CheckoutFree'
-import CheckoutStandard from '../components/CheckoutPage/CheckoutStandard'
+// import CheckoutStandard from '../components/CheckoutPage/CheckoutStandard'
+import CheckoutPremium from '../components/CheckoutPage/CheckoutPremium'
 
 function CheckoutPageCompound() {
   return (
@@ -12,7 +13,8 @@ function CheckoutPageCompound() {
       </HeaderSectionWrapper>
 
       {/* <CheckoutFree /> */}
-      <CheckoutStandard />
+      {/* <CheckoutStandard /> */}
+      <CheckoutPremium />
     </Wrapper>
   );
 }
