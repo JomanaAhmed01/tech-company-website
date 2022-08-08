@@ -1,16 +1,18 @@
 import './App.css';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import HomePageCompound from './compounds/HomePageCompound'
-// import ProductPageCompound from './compounds/ProductPageCompound'
-// import PricingPlansPageCompound from './compounds/PricingPlansPageCompound'
-// import ContactPageCompound from './compounds/ContactPageCompound'
-// import DemoModePageCompound from './compounds/DemoModePageCompound'
-import CheckoutPageCompound from './compounds/CheckoutPageCompound'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePageCompound from './compounds/HomePageCompound'
+import ProductPageCompound from './compounds/ProductPageCompound'
+import PricingPlansPageCompound from './compounds/PricingPlansPageCompound'
+import ContactPageCompound from './compounds/ContactPageCompound'
+import DemoModePageCompound from './compounds/DemoModePageCompound'
+import CheckoutFreePageCompound from './compounds/CheckoutFreePageCompound'
+import CheckoutStandardPageCompound from './compounds/CheckoutStandardPageCompound'
+import CheckoutPremiumPageCompound from './compounds/CheckoutPremiumPageCompound'
 
 function App() {
   return (
     <div className="App">
-      {/* <Router>
+      <Router>
         <Switch>
           <Route exact path="/">
             <HomePageCompound />
@@ -31,9 +33,20 @@ function App() {
           <Route path="/DemoModePageCompound">
             <DemoModePageCompound />
           </Route>
+
+          <Route path="/CheckoutFreePageCompound">
+            <CheckoutFreePageCompound />
+          </Route>
+
+          <Route path="/CheckoutStandardPageCompound">
+            <CheckoutStandardPageCompound />
+          </Route>
+
+          <Route path="/CheckoutPremiumPageCompound">
+            <CheckoutPremiumPageCompound />
+          </Route>
         </Switch>
-      </Router> */}
-      <CheckoutPageCompound />
+      </Router>
     </div>
   );
 }
