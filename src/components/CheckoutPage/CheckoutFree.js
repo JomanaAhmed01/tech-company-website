@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function CheckoutFree() {
+
+  const history = useHistory()
+  
   return (
     <Wrapper>
       <Header>Checkout</Header>
@@ -13,8 +17,8 @@ function CheckoutFree() {
           <SignUp>1 Sign up</SignUp>
           <TextPurchase>To purchase this plan and use its benefits in the future, log in to your account or sign up.</TextPurchase>
           <ButtonsWrapper>
-            <SignUpButton>Sign Up</SignUpButton>
-            <LogInButton>Log In</LogInButton>
+            <SignUpButton onClick={() => history.push('/DemoModePageCompound')}>Sign Up</SignUpButton>
+            <LogInButton onClick={() => history.push('/DemoModePageCompound')}>Log In</LogInButton>
           </ButtonsWrapper>
         </TextWrapper>
 
