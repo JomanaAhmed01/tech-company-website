@@ -56,14 +56,12 @@ export const ItemsWrapper = styled.div`
 `
 
 export const FirstItem = styled.p`
-  color: #6E6E6E;
-  font-size: 16px;
-  cursor: default;
-
   @media screen and (max-width: 1024px) {
+    color: #6E6E6E;
     font-size: 22px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: bold;
+    padding-bottom: 10px;
   }
 `
 
@@ -71,6 +69,7 @@ export const Item = styled.p`
   color: #000000;
   font-size: 16px;
   transition: 0.3s ease-in-out;
+  padding-bottom: 10px;
   cursor: default;
 
   :hover {
