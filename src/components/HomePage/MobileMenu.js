@@ -4,39 +4,38 @@ import { useHistory } from 'react-router-dom'
 import { PersonCircle } from '@styled-icons/ionicons-solid/PersonCircle'
 import { Delete } from '@styled-icons/typicons/Delete'
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function MobileMenu() {
 
-    const history = useHistory()
+  const history = useHistory()
 
-    return (
-        <Wrapper>
-            <LogInOutWrapper>
-                <LogInProfileWrapper>
-                    <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
-                    <LogInText onClick={() => history.push('/DemoModePageCompound')}>Log In</LogInText>
-                </LogInProfileWrapper>
+  return (
+    <Wrapper>
+      <LogInOutWrapper>
+        <LogInProfileWrapper>
+          <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
+          <LogInText onClick={() => history.push('/DemoModePageCompound')}>Log In</LogInText>
+        </LogInProfileWrapper>
 
-                <ExitIcon onClick={() => history.push('/')} />
-            </LogInOutWrapper>
+        <ExitIcon onClick={() => history.push('/')} />
+      </LogInOutWrapper>
 
-            <ItemsWrapper>
-                <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
-                <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
-                <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
-                <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
-            </ItemsWrapper>
-        </Wrapper>
-    );
+      <ItemsWrapper>
+        <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
+        <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
+        <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
+        <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
+      </ItemsWrapper>
+    </Wrapper>
+  );
 }
 
 export const Wrapper = styled.div`
   display: none;
 
   @media screen and (max-width: 1024px) {
-    display: initial;
     display: flex;
     flex-direction: column;
     height: 100%;
