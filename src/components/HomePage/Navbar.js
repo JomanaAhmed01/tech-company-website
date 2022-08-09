@@ -27,7 +27,7 @@ function Navbar() {
                 <LogInText onClick={() => history.push('/DemoModePageCompound')}>Log In</LogInText>
               </LogInProfileWrapper>
 
-              <ExitIcon onClick={() => history.push('/')} />
+              <ExitIcon onClick={() => setShowMenuSection(false)} />
             </LogInOutWrapper>
 
             <MenuItemsWrapper>
@@ -200,7 +200,7 @@ export const MenuWrapper = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     margin-top: 50px;
   }
