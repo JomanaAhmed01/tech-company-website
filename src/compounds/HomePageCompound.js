@@ -15,31 +15,23 @@ import Footer from '../components/HomePage/Footer'
 function HomePageCompound() {
   return (
     <Wrapper>
-      <HeaderWrapper>
-        <Navbar />
-        <Communicate />
-        <RightSoftware />
-        <WhatWeOffer />
-        <BuiltForCreatives />
-        <IndustryLeaders />
-        <ClientsReview />
-        <PricingOptions />
-        <MaximizeYourProductivity />
-        <Footer />
-      </HeaderWrapper>
+      <Navbar />
       <MobileMenu />
+      <Communicate />
+      <RightSoftware />
+      <WhatWeOffer />
+      <BuiltForCreatives />
+      <IndustryLeaders />
+      <ClientsReview />
+      <PricingOptions />
+      <MaximizeYourProductivity />
+      <Footer />
     </Wrapper>
   );
 }
 
 export const Wrapper = styled.div`
   
-`
-
-export const HeaderWrapper = styled.div`
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
 `
 
 export default HomePageCompound;

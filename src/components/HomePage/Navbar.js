@@ -1,43 +1,56 @@
 import React from 'react';
 import styled from "styled-components"
+import { useState } from "react"
 import { useHistory } from 'react-router-dom'
 import { PersonCircle } from '@styled-icons/ionicons-solid/PersonCircle'
 import { MenuOutline } from '@styled-icons/evaicons-outline/MenuOutline'
+import MobileMenu from '../HomePage/MobileMenu'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Montserrat:wght@200;300;400&family=Poppins&family=Questrial&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto:wght@300&family=Space+Grotesk&family=Suez+One&display=swap');
 </style>
 
 function Navbar() {
 
+  const [showMenuSection, setShowMenuSection] = useState(false)
+
   const history = useHistory()
 
   return (
     <Wrapper>
-      <LogoWrapper>
-        <Logo src='./img/logo.svg' />
-        <LogoTextWrapper>
-          <WeDu onClick={() => history.push('/')}>WeDu</WeDu>
-          <Desc>Communicate. Collaborate. Create.</Desc>
-        </LogoTextWrapper>
-      </LogoWrapper>
 
-      <ItemsWrapper>
-        <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
-        <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
-        <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
-        <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
+      <>
+        {showMenuSection ? (
+          <MobileMenu />
+        ) : (
+          <>
+            <LogoWrapper>
+              <Logo src='./img/logo.svg' />
+              <LogoTextWrapper>
+                <WeDu onClick={() => history.push('/')}>WeDu</WeDu>
+                <Desc>Communicate. Collaborate. Create.</Desc>
+              </LogoTextWrapper>
+            </LogoWrapper>
 
-        <LogInWrapper>
-          <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
-          <Item onClick={() => history.push('/DemoModePageCompound')}>Log In</Item>
-        </LogInWrapper>
+            <ItemsWrapper>
+              <FirstItem onClick={() => history.push('/')}>Home</FirstItem>
+              <Item onClick={() => history.push('/ProductPageCompound')}>Product</Item>
+              <Item onClick={() => history.push('/PricingPlansPageCompound')}>Pricing Plans</Item>
+              <Item onClick={() => history.push('/ContactPageCompound')}>Contact</Item>
 
-        <ButtonWrapper>
-          <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
-        </ButtonWrapper>
-      </ItemsWrapper>
+              <LogInWrapper>
+                <ProfileIcon onClick={() => history.push('/DemoModePageCompound')} />
+                <Item onClick={() => history.push('/DemoModePageCompound')}>Log In</Item>
+              </LogInWrapper>
 
-      <MenuIcon />
+              <ButtonWrapper>
+                <Button onClick={() => history.push('/PricingPlansPageCompound')}>Get Started</Button>
+              </ButtonWrapper>
+            </ItemsWrapper>
+
+            <MenuIcon />
+          </>
+        )}
+      </>
     </Wrapper>
   );
 }
